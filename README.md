@@ -32,7 +32,7 @@ Response:
     }
 }
 
-II. https://aus-exchange-rates-api.herokuapp.com/historical/<date>/
+II. https://aus-exchange-rates-api.herokuapp.com/historical/**some-date**
 [GET]
 
 Fetches the historical exchange rates data for the given date.
@@ -47,19 +47,19 @@ Response:
 
 Examples:
 
-1. https://aus-exchange-rates-api.herokuapp.com/historical/<invalid-date>
+1. https://aus-exchange-rates-api.herokuapp.com/historical/11-19-2021
 
 {
   'error' : 'The entered date is not valid for a historical lookup.'
 }
 
-2. https://aus-exchange-rates-api.herokuapp.com/historical/<incompatible-date-format>
+2. https://aus-exchange-rates-api.herokuapp.com/historical/11:12:2021
 
 {
     'error' : 'Incorrect date format, please enter a date in MM-DD-YYYY.'   
 }
 
-3. https://aus-exchange-rates-api.herokuapp.com/historical/<date>
+3. https://aus-exchange-rates-api.herokuapp.com/historical/11-2-2009
 
 {
     "historical rates": {
