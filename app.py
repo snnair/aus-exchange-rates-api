@@ -25,3 +25,5 @@ class HistoricalExchangeRates(Resource):
 api.add_resource(LatestExchangeRates, '/latest')
 api.add_resource(HistoricalExchangeRates, '/historical/<string:date>')
 
+if __name__ == '__main__':
+    app.run(port=5000)
